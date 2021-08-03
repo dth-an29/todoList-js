@@ -39,6 +39,75 @@ form button {
 }
 
 form button:hover {
-    background: #fda085;
-    color: white;
+  background: #fda085;
+  color: white;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  background: #fda085;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.complete-btn {
+  background: #6eeb7e;
+}
+
+.trash-btn:hover {
+  color: #fda085;
+  background: white;
+}
+
+.complete-btn:hover {
+  color: #6eeb7e;
+  background: white;
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
 }
